@@ -1,28 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="" />
+    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/DataGenerator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/GestureRecognizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/HandDetector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/ModelTrainer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/OpenCV/VideoCapture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Utils/DirectoriesManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GimmyFimmy"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GimmyFimmy/project_gcss_2.0.git&quot;,
+    &quot;accountId&quot;: &quot;07dd004b-70f8-496d-a714-4ebbcbd778e0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2rUAVgk7EvciU3FBTgUL9nosyqO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.App.executor": "Run",
+    "Python.DataGenerator.executor": "Run",
+    "Python.DirectoriesManager.executor": "Run",
+    "Python.ModelTrainer.executor": "Run",
+    "Python.VideoCapture.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="SharedIndexes">
