@@ -21,9 +21,6 @@ class DataGenerator():
             draw_landmarks=True
         )
 
-    def __create_directory(self, name: str):
-        DirectoriesManager.create_directory(path_to_datasets+f'/{name}')
-
     def __get_directory(self, name: str):
         assert(type(name) == str)
 
@@ -43,6 +40,7 @@ class DataGenerator():
     def __on_frame_changed(self, image):
         if self._index == images_limit:
             self.VideoCapture.stop_capture()
+            return
 
         result = self.HandDetector.process(image)
 
@@ -59,7 +57,8 @@ class DataGenerator():
             print("folder already exists!")
             return
 
-        self.__create_directory(name)
+        DirectoriesManager.create_directory(path_to_datasets+f'/{name}')
+
         self.__generate_dataset(name)
 
     def change_gesture(self, name: str):
@@ -73,3 +72,6 @@ class DataGenerator():
     def delete_gesture(self, name: str):
         path_to_directory = self.__get_directory(name)
         DirectoriesManager.delete_directory(path_to_directory)
+
+a=DataGenerator()
+a.add_gesture("fuck")

@@ -1,3 +1,4 @@
+import cv2
 import mediapipe
 
 from mediapipe.python.solutions import hands
@@ -9,16 +10,14 @@ class HandDetector():
         self.Hands = hands.Hands(
             static_image_mode=False,
             max_num_hands=max_hands,
-            min_detection_confidence=0.5,
-            min_tracking_confidence=0.5
         )
 
         self.draw_landmarks = draw_landmarks
 
     def process(self, image):
-        assert (image.all() != None)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-        results = self.Hands.process(image) or None
+        results = self.Hands.process(image)
 
         if results.multi_hand_landmarks and self.draw_landmarks == True:
             for hand_landmarks in results.multi_hand_landmarks:

@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/DataGenerator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/GestureRecognizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/HandDetector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/ModelTrainer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/OpenCV/VideoCapture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/Utils/DirectoriesManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="'Shared' updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Mediapipe/DataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Mediapipe/DataGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Mediapipe/HandDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Mediapipe/HandDetector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/OpenCV/VideoCapture.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/OpenCV/VideoCapture.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +26,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GimmyFimmy"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GimmyFimmy&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/GimmyFimmy/project_gcss_2.0.git&quot;,
@@ -58,6 +54,7 @@
     "Python.App.executor": "Run",
     "Python.DataGenerator.executor": "Run",
     "Python.DirectoriesManager.executor": "Run",
+    "Python.HandDetector.executor": "Run",
     "Python.ModelTrainer.executor": "Run",
     "Python.VideoCapture.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -81,6 +78,31 @@
       <option name="presentableId" value="Default" />
       <updated>1736603304591</updated>
     </task>
+    <task id="LOCAL-00001" summary="'Shared' updated">
+      <option name="closed" value="true" />
+      <created>1736630389276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736630389276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="'Shared' updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="'Shared' updated" />
   </component>
 </project>
