@@ -1,34 +1,33 @@
 import cv2
 import os.path
 
-from Shared.OpenCV import  VideoCapture
-from Shared.Mediapipe import HandDetector
-from Shared.Utils.DirectoriesManager import DirectoriesManager
+from Shared.OpenCV.VideoCapture import  VideoCapture
+from Shared.Mediapipe.HandDetector import HandDetector
+from Shared.Utils.DirectoriesCleanup import DirectoriesCleanup
 
 path_to_datasets = os.path.abspath('Datasets')
 
-images_limit = 99
+images_limit = 100
 
 class DataGenerator():
-    def __init__(self):
-        self.VideoCapture = VideoCapture.VideoCapture(
-            display_video=True,
-            display_name="Capturing images..."
+    def __init__(self, display_video=False, draw_landmarks=False):
+        if os.path.exists(path_to_datasets) == False:
+            os.makedirs(path_to_datasets)
+
+        self.VideoCapture = VideoCapture(
+            display_video=display_video,
+            display_name="DataGenerator"
         )
 
-        self.HandDetector = HandDetector.HandDetector(
+        self.HandDetector = HandDetector(
             max_hands=2,
-            draw_landmarks=True
+            draw_landmarks=draw_landmarks
         )
 
     def __get_directory(self, name: str):
         assert(type(name) == str)
 
         self._gesture_name = name
-
-        if name == "None":
-            print("can't return folder with given name 'None'!")
-            return
 
         if os.path.exists(path_to_datasets+f'/{name}'):
             return path_to_datasets+f'/{name}'
@@ -57,7 +56,7 @@ class DataGenerator():
             print("folder already exists!")
             return
 
-        DirectoriesManager.create_directory(path_to_datasets+f'/{name}')
+        os.makedirs(path_to_datasets+f'/{name}')
 
         self.__generate_dataset(name)
 
@@ -65,13 +64,10 @@ class DataGenerator():
         path_to_directory = self.__get_directory(name)
 
         if path_to_directory:
-            DirectoriesManager.delete_content(path_to_directory)
+            DirectoriesCleanup.delete_content(path_to_directory)
 
             self.__generate_dataset(name)
 
     def delete_gesture(self, name: str):
         path_to_directory = self.__get_directory(name)
-        DirectoriesManager.delete_directory(path_to_directory)
-
-a=DataGenerator()
-a.add_gesture("fuck")
+        DirectoriesCleanup.delete_directory(path_to_directory)

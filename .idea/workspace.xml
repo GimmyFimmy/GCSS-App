@@ -4,12 +4,137 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="'Shared' updated">
+    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="patch">
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1031.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1033.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1041.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1067.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1072.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1083.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1089.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1101.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1107.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1119.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1134.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1189.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1198.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1206.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1214.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/122.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1224.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1244.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1255.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1299.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1308.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1340.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/136.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1362.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1376.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1381.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1412.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1416.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/142.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1424.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1446.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1469.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1488.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1501.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1521.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1534.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1552.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1590.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1609.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1627.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1633.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1643.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/165.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1650.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1657.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1663.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1712.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1729.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1747.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1784.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1799.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1802.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1811.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1812.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1814.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1823.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1843.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1851.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1876.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1878.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1883.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1885.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1890.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/190.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/1906.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/193.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/203.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/213.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/229.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/236.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/239.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/249.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/252.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/255.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/275.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/292.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/327.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/334.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/349.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/363.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/386.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/394.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/424.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/433.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/511.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/520.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/590.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/598.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/613.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/657.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/704.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/71.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/729.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/735.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/744.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/756.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/76.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/791.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/794.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/802.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/820.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/823.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/898.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/939.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/941.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/946.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/950.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/955.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/957.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Mediapipe/Datasets/none/993.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shared/Mediapipe/DataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Mediapipe/DataGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Mediapipe/HandDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Mediapipe/HandDetector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/OpenCV/VideoCapture.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/OpenCV/VideoCapture.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Mediapipe/GestureRecognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Mediapipe/GestureRecognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Mediapipe/ModelTrainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Mediapipe/ModelTrainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Utils/DirectoriesManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Utils/DirectoriesCleanup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +163,9 @@
     &quot;accountId&quot;: &quot;07dd004b-70f8-496d-a714-4ebbcbd778e0&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/Lib/site-packages/mediapipe_model_maker/python/vision/gesture_recognizer/metadata_writer.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -49,19 +177,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.App.executor": "Run",
-    "Python.DataGenerator.executor": "Run",
-    "Python.DirectoriesManager.executor": "Run",
-    "Python.HandDetector.executor": "Run",
-    "Python.ModelTrainer.executor": "Run",
-    "Python.VideoCapture.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.App.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DataGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DirectoriesManager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.GestureRecognizer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HandDetector.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ModelTrainer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.VideoCapture.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kpers/PycharmProjects/project_gcss_2.0/Shared/Mediapipe/Models&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\Shared\Mediapipe\Models" />
+      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\Shared\Mediapipe" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\Shared\Mediapipe" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736630389276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="patch">
+      <option name="closed" value="true" />
+      <created>1736686401734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736686401734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +250,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="'Shared' updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="'Shared' updated" />
+    <MESSAGE value="patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch" />
   </component>
 </project>

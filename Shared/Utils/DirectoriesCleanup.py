@@ -1,7 +1,7 @@
 import os
 import shutil
 
-class DirectoriesManager():
+class DirectoriesCleanup():
     def delete_content(path_to_directory: str):
         for filename in os.listdir(path_to_directory):
 
@@ -20,9 +20,3 @@ class DirectoriesManager():
             os.rmdir(path_to_directory)
         except Exception as reason:
             print('failed to delete %s. reason: %s' % (path_to_directory, reason))
-
-    def create_directory(path_to_directory: str):
-        try:
-            os.makedirs(path_to_directory)
-        except Exception as reason:
-            print('failed to create %s. reason: %s' % (path_to_directory, reason))

@@ -1,29 +1,30 @@
 import os.path
 import mediapipe_model_maker
 
-from mediapipe_model_maker import image_classifier
+from mediapipe_model_maker import gesture_recognizer
 
 from Shared.Mediapipe.DataGenerator import path_to_datasets
-from Shared.Utils.DirectoriesManager import DirectoriesManager
+from Shared.Utils.DirectoriesCleanup import DirectoriesCleanup
 
 path_to_models = os.path.abspath('Models')
 
 class ModelTrainer():
     def __init__(self):
-        self.data = image_classifier.Dataset.from_folder(path_to_datasets)
-        self.supported_model = image_classifier.SupportedModels.MOBILENET_V2
+        self.data = data = gesture_recognizer.Dataset.from_folder(
+            dirname=path_to_datasets,
+            hparams=gesture_recognizer.HandDataPreprocessingParams()
+        )
 
-        self.hparams = image_classifier.HParams(
+        self.hparams = gesture_recognizer.HParams(
             export_dir=path_to_models
         )
 
-        self.options = image_classifier.ImageClassifierOptions(
-            supported_model=self.supported_model,
+        self.options = gesture_recognizer.GestureRecognizerOptions(
             hparams=self.hparams
         )
 
     def __check_for_model(self):
-        if not self.model:
+        if self.model == None:
             print("no model was detected!")
 
         return self.model != None
@@ -32,7 +33,7 @@ class ModelTrainer():
         train_data, remaining_data = self.data.split(0.8)
         self.test_data, validation_data = remaining_data.split(0.5)
 
-        self.model = image_classifier.ImageClassifier.create(
+        self.model = gesture_recognizer.GestureRecognizer.create(
             train_data=train_data,
             validation_data=validation_data,
             options=self.options,
@@ -42,13 +43,13 @@ class ModelTrainer():
         if not self.__check_for_model():
             return
 
-        return self.model.evaluate(self.test_data)
+        return self.model.evaluate(self.test_data, batch_size=1)
 
-    def export_model(self, name="model"):
+    def export_model(self):
         if not self.__check_for_model():
             return
 
-        self.model.export_model(model_name=name+'.tfile')
+        self.model.export_model()
 
     def destroy_all_models(self):
-        DirectoriesManager.delete_content(path_to_models)
+        DirectoriesCleanup.delete_content(path_to_models)
