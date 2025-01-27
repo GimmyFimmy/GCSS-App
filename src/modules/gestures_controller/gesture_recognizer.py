@@ -7,10 +7,14 @@
     **Private Methods**:
         *__init__* --> initializes util
 
+        *__result_callback* --> calls when process results received
+
     ----
 
     **Public Methods**:
         *process* --> callbacks gesture name, image, frame timestamp ms
+
+        *set_listener* --> sets new process results listener
 """
 
 # import libraries
@@ -19,17 +23,30 @@ import os.path, mediapipe, numpy
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 from mediapipe.tasks.python.vision import RunningMode
-from setuptools.command.alias import alias
 
 # paths
 path_to_models = os.path.abspath('models')
 path_to_model_asset = os.path.join(path_to_models, 'gesture_recognizer.task')
 
 class GestureRecognizer:
-    def __init__(self, result_callback):
-        # check if 'function' type received
-        assert(callable(result_callback) == True)
+    def __result_callback(self, *args):
+        # check if 'listener: function' exists
+        if self.listener:
+            # reset 'gesture: str'
+            gesture = 'none'
 
+            # get 'results'
+            results = args[0]
+
+            # check if 'gestures' received
+            if results.gestures:
+                # set new 'gesture: str'
+                gesture = results.gestures[0][0].category_name
+
+            # call 'listener: function'
+            self.listener(gesture)
+
+    def __init__(self):
         # create gesture recognizer 'base options'
         self.base_options = python.BaseOptions(
             model_asset_path=path_to_model_asset
@@ -39,7 +56,7 @@ class GestureRecognizer:
         self.options = vision.GestureRecognizerOptions(
             base_options=self.base_options,
             running_mode=RunningMode.LIVE_STREAM,
-            result_callback=result_callback
+            result_callback=self.__result_callback
         )
 
         # create gesture recognizer with options
@@ -47,10 +64,18 @@ class GestureRecognizer:
             options=self.options
         )
 
-    def process(self, image: numpy.ndarray, frame_timestamp_ms: int):
-        # check if 'int' type received
-        assert (type(frame_timestamp_ms) == int)
+        # empty variables
+        self.listener = None
 
+    def set_listener(self, result_callback):
+        # check if 'function' type received
+        if not callable(result_callback):
+            return
+
+        # set new 'listener: function'
+        self.listener = result_callback
+
+    def process(self, image: numpy.ndarray, frame_timestamp_ms: int):
         # convert 'image: ndarray' in 'mp_image'
         mp_image = mediapipe.Image(
             image_format=mediapipe.ImageFormat.SRGB,

@@ -20,6 +20,7 @@
 # import libraries
 import os.path
 
+from PIL.features import modules
 from mediapipe_model_maker import gesture_recognizer
 
 # paths
