@@ -4,520 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="added 'requirements.txt'">
-      <change afterPath="$PROJECT_DIR$/src/modules/devices_controller/communicator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/103.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/119.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/142.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/143.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/146.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/158.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/165.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/166.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/170.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/176.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/179.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/183.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/192.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/194.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/206.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/227.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/236.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/249.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/258.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/269.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/276.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/278.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/282.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/283.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/284.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/299.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/302.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/306.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/318.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/319.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/321.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/339.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/393.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/394.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/395.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/401.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/406.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/411.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/423.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/439.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/460.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/461.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/465.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/472.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/477.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/482.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/483.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/495.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/504.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/505.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/51.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/518.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/529.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/53.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/531.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/533.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/537.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/539.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/54.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/544.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/57.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/575.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/594.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/601.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/620.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/628.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/654.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/655.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/657.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/658.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/666.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/677.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/680.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/690.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/701.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/717.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/719.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/72.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/730.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/734.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/74.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/744.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/757.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/76.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/77.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/771.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/785.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/791.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/80.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/806.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/811.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/818.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/832.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/837.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/838.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/844.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/846.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/847.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/855.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/865.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/879.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/884.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/887.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/89.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/890.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/891.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/898.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/901.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/905.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/91.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/918.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/919.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/935.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/941.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/944.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/955.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/971.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/973.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/paper/977.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/133.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/152.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/165.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/168.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/182.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/186.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/193.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/206.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/211.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/216.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/218.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/223.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/234.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/238.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/239.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/244.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/254.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/285.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/286.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/290.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/302.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/305.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/309.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/318.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/320.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/328.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/329.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/348.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/351.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/356.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/360.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/363.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/372.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/376.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/392.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/398.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/399.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/407.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/409.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/416.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/426.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/427.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/428.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/431.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/435.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/441.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/449.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/507.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/513.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/523.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/524.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/529.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/536.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/537.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/54.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/541.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/545.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/546.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/548.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/549.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/56.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/560.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/565.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/567.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/592.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/593.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/595.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/614.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/617.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/621.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/625.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/635.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/648.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/672.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/675.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/687.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/709.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/722.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/728.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/733.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/750.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/760.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/764.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/769.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/771.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/772.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/776.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/778.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/784.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/796.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/818.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/82.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/834.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/850.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/851.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/854.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/861.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/868.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/872.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/875.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/88.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/891.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/894.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/896.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/901.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/904.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/905.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/906.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/915.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/922.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/929.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/931.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/938.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/942.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/945.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/956.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/rock/967.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/100.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/104.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/116.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/117.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/119.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/122.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/126.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/129.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/149.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/156.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/162.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/169.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/173.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/184.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/188.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/192.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/196.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/208.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/222.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/223.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/230.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/232.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/239.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/251.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/261.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/264.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/269.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/276.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/278.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/285.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/289.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/293.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/301.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/306.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/321.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/323.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/338.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/378.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/382.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/387.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/394.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/397.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/428.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/436.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/448.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/463.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/476.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/482.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/520.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/522.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/527.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/531.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/534.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/549.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/550.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/559.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/56.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/568.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/57.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/580.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/589.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/595.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/596.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/60.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/602.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/604.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/614.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/617.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/630.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/631.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/64.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/641.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/656.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/657.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/670.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/673.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/684.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/691.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/70.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/705.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/706.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/707.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/715.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/720.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/730.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/732.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/753.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/760.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/764.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/782.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/785.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/788.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/791.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/792.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/798.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/803.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/804.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/819.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/853.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/856.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/866.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/871.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/878.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/925.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/927.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/930.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/942.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/954.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/96.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/scissors/968.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/logger.py" afterDir="false" />
+    <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="gesture_recognizer.py tested">
+      <change afterPath="$PROJECT_DIR$/src/modules/devices_controller/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/devices_controller/registry.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/gesture_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/gesture_recognizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/hand_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/hand_detector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/model_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/model_trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/mediapipe/draw_landmarks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/open_cv/frame_timestamp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/open_cv/save_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/open_cv/video_capture.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/video_capture.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/other/cleanup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cleanup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1000.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1000.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1005.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1031.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1031.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1033.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1033.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1041.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1041.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1048.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1048.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1067.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1067.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1072.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1072.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1083.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1083.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1089.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1089.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1101.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1101.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1107.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1107.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1119.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1128.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1134.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1189.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1189.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1198.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1198.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1206.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1206.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1214.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1214.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/122.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/122.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1224.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1224.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1244.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1244.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1255.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1255.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1299.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1299.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1308.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1340.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1340.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/136.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/136.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1362.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1362.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1376.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1376.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1381.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1381.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1412.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1412.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1416.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1416.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/142.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/142.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1424.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1424.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1446.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1446.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1469.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1469.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1488.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1488.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1501.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1501.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1521.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1521.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1534.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1534.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1552.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1552.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1590.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1590.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1609.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1609.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1627.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1627.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1633.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1633.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1643.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1643.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/165.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/165.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1650.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1650.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1657.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1657.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1663.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1663.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1712.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1712.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1729.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1729.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1747.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1747.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1784.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1784.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1799.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1799.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1802.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1802.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1811.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1811.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1812.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1812.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1814.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1814.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1823.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1823.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1843.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1843.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1851.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1851.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1876.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1876.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1878.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1878.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1883.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1883.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1885.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1885.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1890.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1890.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/190.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/190.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/1906.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/1906.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/193.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/193.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/203.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/203.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/213.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/213.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/229.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/229.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/236.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/236.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/239.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/239.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/249.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/249.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/252.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/252.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/255.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/255.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/270.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/270.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/275.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/275.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/292.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/292.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/32.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/327.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/327.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/33.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/334.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/334.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/349.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/349.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/363.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/363.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/386.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/386.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/39.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/394.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/394.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/424.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/424.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/433.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/433.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/44.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/511.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/511.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/520.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/520.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/57.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/590.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/590.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/598.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/598.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/60.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/613.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/613.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/65.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/657.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/657.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/704.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/704.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/71.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/729.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/729.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/735.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/735.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/744.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/744.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/756.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/756.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/76.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/779.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/779.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/791.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/791.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/794.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/794.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/800.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/800.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/802.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/802.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/820.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/820.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/823.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/823.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/898.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/898.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/939.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/939.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/941.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/941.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/946.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/946.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/950.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/950.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/955.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/955.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/957.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/957.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/datasets/none/993.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/datasets/none/993.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/devices_controller/communicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/devices_controller/communicator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/best_model_weights.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/best_model_weights.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/best_model_weights.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/best_model_weights.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0001.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0001.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0001.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0001.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0002.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0002.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0002.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0002.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0003.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0003.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0003.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0003.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0004.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0004.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0004.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0004.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0005.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0005.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0005.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0005.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0006.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0006.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0006.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0006.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0007.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0007.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0007.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0007.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0008.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0008.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0008.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0008.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0009.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0009.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0009.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0009.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0010.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0010.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0010.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/epoch_models/model-0010.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/gesture_recognizer.task" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gestures_controller/models/gesture_recognizer.task" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/logs/train/events.out.tfevents.1737923683.GIMMYPC.24296.0.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gestures_controller/models/logs/validation/events.out.tfevents.1737923685.GIMMYPC.24296.1.v2" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -564,27 +81,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.App.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DataGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DirectoriesManager.executor&quot;: &quot;Run&quot;,
-    &quot;Python.GestureRecognizer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HandDetector.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ModelTrainer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.VideoCapture.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gesture_recognizer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.logger.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kpers/PycharmProjects/project_gcss_2.0/src/modules/gestures_controller/models&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.App.executor": "Run",
+    "Python.DataGenerator.executor": "Run",
+    "Python.DirectoriesManager.executor": "Run",
+    "Python.GestureRecognizer.executor": "Run",
+    "Python.HandDetector.executor": "Run",
+    "Python.ModelTrainer.executor": "Run",
+    "Python.VideoCapture.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.communicator.executor": "Run",
+    "Python.gesture_recognizer.executor": "Run",
+    "Python.logger.executor": "Run",
+    "Python.registry.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "kpers",
+    "last_opened_file_path": "C:/Users/kpers/PycharmProjects/project_gcss_2.0/src/modules/devices_controller/devices",
+    "settings.editor.selected.configurable": "editor.reader.mode"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\modules\devices_controller\devices" />
       <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\modules\gestures_controller\models" />
       <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\datasets" />
       <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\Shared\Mediapipe\Models" />
@@ -654,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737238616091</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gesture_recognizer.py tested">
+      <option name="closed" value="true" />
+      <created>1738012063347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738012063347</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gesture_recognizer.py tested">
+      <option name="closed" value="true" />
+      <created>1738012126323</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738012126323</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -675,6 +211,7 @@
     <MESSAGE value="patch 2" />
     <MESSAGE value="refactor" />
     <MESSAGE value="added 'requirements.txt'" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 'requirements.txt'" />
+    <MESSAGE value="gesture_recognizer.py tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="gesture_recognizer.py tested" />
   </component>
 </project>
