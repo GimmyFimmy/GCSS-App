@@ -77,7 +77,7 @@ class Utils:
     @staticmethod
     def get_gesture_path(name: str):
         # check if 'str' type received
-        Logger.assertion(type(name) is str, f'{name} must be string!')
+        Logger.assertion(type(name) is str, '<name> must be string!')
 
         # return 'path: str' to gesture 'directory'
         return os.path.join(path_to_datasets, name)
@@ -133,6 +133,10 @@ class GesturesController:
                 image=new_image,
                 frame_timestamp_ms=frame_timestamp_ms
             )
+
+            HandDetector.draw(new_image, self.multi_hand_landmarks)
+
+        cv2.imshow('test', new_image)
 
     def __save_process(self, image: numpy.ndarray):
         # clone 'image: ndarray'
