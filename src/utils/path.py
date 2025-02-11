@@ -2,7 +2,7 @@ import os
 
 class Path:
     @staticmethod
-    def exists(file: str, directory=None):
+    def exists(file: str):
         try:
             return (
                     os.path.isfile(file)
