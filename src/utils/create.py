@@ -6,11 +6,16 @@ from src.constants import (
     BOXES_TYPES
 )
 
+from src.utils.calculate import screen_center
+
 class Create:
     @staticmethod
-    def window(geometry: str):
+    def window(width: int, height: int):
         window = Tk()
-        window.geometry(geometry)
+
+        x, y = screen_center(window, width, height)
+
+        window.geometry(f'{width}x{height}+{x}+{y}')
         window.resizable(False, False)
 
         return window
@@ -91,3 +96,23 @@ class Create:
                 title=title,
                 message=text
             )
+
+    @staticmethod
+    def input_box(x: float, y: float, width: float, height: float):
+        entry = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000000",
+            highlightthickness=0,
+            font=('Inter bold', 18)
+        )
+
+        entry.place(
+            x=x,
+            y=y,
+            width=width,
+            height=height,
+
+        )
+
+        return entry

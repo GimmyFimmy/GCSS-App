@@ -14,7 +14,7 @@ class DevicesSettings:
 
         self.window = CTk()
         self.window.resizable(False, False)
-        self.window.geometry('400x440')
+        self.window.geometry(400, 440)
 
         self.frame = CTkScrollableFrame(
             self.window,
@@ -34,15 +34,17 @@ class DevicesSettings:
             print(args)
 
         if data is not None:
-            CTkLabel(self.frame, text=f'Локальный IP-Адрес: {data[0]}', fg_color='transparent').pack()
-            CTkLabel(self.frame, text=f'Локальный Порт: {data[1]}', fg_color='transparent').pack(pady=10)
+            CTkLabel(self.frame, text=f'IP-Адрес: {data[0]}', fg_color='transparent').pack()
+            CTkLabel(self.frame, text=f'Порт: {data[1]}', fg_color='transparent').pack(pady=20)
 
             for line in data[3:]:
                 key, value = line.split('=')
 
+                CTkLabel(self.frame, text=f'{key}', fg_color='transparent').pack(pady=10)
+
                 option_menu = CTkOptionMenu(self.frame, values=gestures)
                 option_menu.set(value)
                 option_menu.configure(command=on_button_pressed)
-                option_menu.pack(pady=10)
+                option_menu.pack()
 
         self.window.mainloop()

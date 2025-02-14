@@ -15,7 +15,7 @@ class Menu:
         self.date = None
 
     def create(self, *args):
-        self.window = Create.window('600x360')
+        self.window = Create.window(600, 360)
         self.canvas = Create.canvas(self.window, 360, 600)
 
         self.image_image_1 = Create.image(0, "image_1")
@@ -80,7 +80,7 @@ class Menu:
             300.0,
             40.0,
             40.0,
-            lambda: self.on_button_pressed(2)
+            lambda: self.on_button_pressed(2, False)
         )
 
         Create.button(
@@ -89,12 +89,9 @@ class Menu:
             300.0,
             40.0,
             40.0,
-            lambda: self.on_button_pressed(1)
+            lambda: self.on_button_pressed(1, False)
         )
 
         update_time()
 
         self.window.mainloop()
-
-    def destroy(self):
-        self.window.destroy()

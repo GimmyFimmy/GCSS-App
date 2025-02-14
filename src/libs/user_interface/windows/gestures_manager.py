@@ -8,13 +8,12 @@ from src.constants import (
 )
 
 class GesturesManager:
-    def __init__(self, on_button_pressed, on_add_gesture_pressed, on_remove_gesture_pressed):
+    def __init__(self, on_button_pressed, on_remove_gesture_pressed):
         self.callback = on_button_pressed
-        self.add = on_add_gesture_pressed
         self.remove = on_remove_gesture_pressed
 
     def create(self):
-        self.window = Create.window('400x440')
+        self.window = Create.window(400, 440)
         self.canvas = Create.canvas(self.window, 440, 400)
 
         self.image_image_1 = Create.image(2, "image_1")
@@ -53,7 +52,7 @@ class GesturesManager:
             0.0,
             40.0,
             40.0,
-            self.add
+            lambda: self.callback(3, False)
         )
 
         count = 0
@@ -97,6 +96,3 @@ class GesturesManager:
             count += 1
 
         self.window.mainloop()
-
-    def destroy(self):
-        self.window.destroy()
