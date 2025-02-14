@@ -11,9 +11,6 @@ class VideoCapture:
         # check if 'function' type received
         assert(callable(image_changed))
 
-        # check if 'capture' is opened
-        assert(self.running is False)
-
         # create 'video capture'
         self.capture = cv2.VideoCapture(0)
 
@@ -43,8 +40,5 @@ class VideoCapture:
         return self.running is True
 
     def stop(self):
-        # check if 'capture' is not opened
-        assert(self.running is True)
-
         # release 'capture'
         self.capture.release()

@@ -1,14 +1,14 @@
-import os
+import cv2
 
 from threading import Thread
 
 from src.libs.communicator import *
 from src.libs.user_interface import *
 from src.libs.gesture_recognizer import *
-from src.libs.user_interface.windows.devices_settings import DevicesSettings
 
 from src.utils import (
     calculate,
+    save_image,
     ip_address,
     video_capture,
     draw_landmarks,
@@ -17,27 +17,67 @@ from src.utils import (
 
 from src.constants import (
     Path,
+    MAX_IMAGES,
     DATASETS_PATH,
     DEFAULT_GESTURE
 )
 
 class App:
-    def __check_for_hands(self, image):
+    def __reset_window(self):
+        self.current_window.window.destroy()
+        self.current_window.create()
+
+    def __set_window(self, index=None, *args):
+        if index is not None:
+            self.current_window = self.windows[index]
+            self.current_window.create(*args)
+        else:
+            if self.current_window:
+                 self.current_window.window.destroy()
+                 self.current_window = None
+
+    def __reset_video_capture(self):
+        self.video_capture.stop()
+        cv2.destroyAllWindows()
+
+    def __set_video_capture(self, callback, use_thread=True):
+        if not self.video_capture.is_running():
+            if use_thread:
+                self.video_capture_thread = Thread(
+                    target=lambda: self.video_capture.start(callback)
+                )
+
+                self.video_capture_thread.start()
+            else:
+                self.video_capture.start(callback)
+
+    def __reset_communication(self):
+        self.communicator.stop()
+
+    def __set_communicator(self):
+        if not self.communicator.is_running():
+            self.communicator_thread = Thread(
+                target=self.communicator.start
+            )
+
+            self.communicator_thread.start()
+
+    def __get_hands(self, image):
         # process 'image: ndarray' to check for 'hand(s)'
         processed_image = self.hand_detector.process(image)
 
         # get 'multi_hand_landmarks'
         self.multi_hand_landmarks = processed_image.multi_hand_landmarks
 
-        # return 'true' if 'multi_hand_landmarks' received, otherwise 'false'
-        return self.multi_hand_landmarks is not None
+        # return 'multi_hand_landmarks'
+        return self.multi_hand_landmarks
 
     def __process_recognition(self, image):
         # clone 'image: ndarray'
         new_image = image.__copy__()
 
         # check for 'multi_hand_landmarks' in 'ndarray'
-        if self.__check_for_hands(new_image):
+        if self.__get_hands(new_image):
             # calculate 'frame timestamp ms: int'
             frame_timestamp_ms = calculate.frame_timestamp(self.video_capture.capture)
 
@@ -48,38 +88,89 @@ class App:
             )
 
     def __process_saving(self, image):
-        pass
+        if self._count == (MAX_IMAGES + 1):
+            self.__reset_video_capture()
+            self.create.box(0, 'Информация', 'Жест успешно сохранён')
+            return
+
+        result = self.__get_hands(image)
+
+        if result:
+            self._count += 1
+
+            save_image.save(
+                image=image,
+                name=self._name,
+                index=self._count
+            )
+
+        draw_landmarks.draw(image, result)
+        cv2.imshow('tk', image)
 
     def __on_gesture_received(self, gesture: str):
         if gesture != DEFAULT_GESTURE:
             for data in self.registry.get_devices():
-                keys = ""
+                command = None
 
                 for line in data[3:]:
                     key, value = line.split('=')
 
                     if value == gesture:
-                        keys += f"{key}_"
+                        command = key
+                        break
 
-                if len(keys) != 0:
+                if command:
                     address = (data[0], int(data[1]))
 
-                    self.communicator.send(address, keys)
+                    self.communicator.send(
+                        address=address,
+                        command=command
+                    )
 
-    def __from_client_received(self, data, address):
+    def __on_server_received(self, data, address):
         if not self.registry.get_device(address):
             self.create.box(0, 'Уведомление', 'Новое умное устройство было обнаружено!')
 
             self.registry.write_device(address, data)
             self.communicator.send(address, 'ps')
 
-    def __on_button_pressed(self, index: int, *args):
-        self.current_window.destroy()
+    def __change(self, index=None, process=True, *args):
+        self.__set_window(None)
 
-        self.current_window = self.windows[index]
-        self.current_window.create(*args)
+        print(process)
 
-    def __on_add_gesture_pressed(self):
+        if process:
+            self.__set_video_capture(self.__process_recognition)
+        else:
+            self.__reset_video_capture()
+
+        self.__set_window(index, *args)
+
+    def __on_save_gesture_pressed(self, name: str):
+        if len(name) == 0:
+            self.create.box(1, 'Предупреждение', 'Поле ввода не должно быть пустым!')
+            return
+
+        if len(name) < 3:
+            self.create.box(1, 'Предупреждение', 'В имени должно присутствовать минимум 3 символа!')
+            return
+
+        if len(name) > 20:
+            self.create.box(1, 'Предупреждение', 'В имени не должно присутствовать более 20 символов!')
+            return
+
+        if not name.isalpha():
+            self.create.box(1, 'Предупреждение', 'В имени должны присутствовать только буквы из алфавита!')
+            return
+
+        gesture_path = Path.get_path_to(name, DATASETS_PATH)
+
+        if Path.exists(gesture_path):
+            self.create.box(1, 'Предупреждение', 'Имя уже занято!')
+            return
+
+        self.__set_window()
+
         self.create.box(0, 'Информация', '''
         Следуйте указаниям ниже:
         
@@ -90,7 +181,15 @@ class App:
          3. Не меняйте жест руки
         ''')
 
-        self.count = 0
+        Path.create_directory(gesture_path)
+
+        self._count = 0
+        self._name = name
+
+        self.__reset_video_capture()
+        self.__set_video_capture(self.__process_saving, False)
+
+        self.__change(1, False)
 
     def __on_remove_gesture_pressed(self, name: str):
         box = self.create.box(2, 'Предупреждение', 'Вы уверены, что хотите удалить жест?')
@@ -100,38 +199,33 @@ class App:
 
             Path.remove_directory(gesture_path)
 
-            self.current_window.destroy()
-            self.current_window.create()
+            self.__reset_window()
 
     def __init__(self):
         self.registry = Registry()
-        self.communicator = Communicator(self.__from_client_received)
+        self.communicator = Communicator(self.__on_server_received)
 
         self.gesture_recognizer = GestureRecognizer(self.__on_gesture_received)
-        #self.model_trainer = ModelTrainer()
+        self.model_trainer = ModelTrainer()
         self.hand_detector = HandDetector()
 
         self.create = create.Create()
         self.video_capture = video_capture.VideoCapture()
 
+        self.current_window = None
+
         self.windows = [
-            Menu(self.__on_button_pressed),
-            GesturesManager(self.__on_button_pressed, self.__on_add_gesture_pressed, self.__on_remove_gesture_pressed),
-            DevicesManager(self.__on_button_pressed)
+            Menu(self.__change),
+            GesturesManager(self.__change, self.__on_remove_gesture_pressed),
+            DevicesManager(self.__change),
+            GestureName(self.__change, self.__on_save_gesture_pressed)
         ]
 
-        DevicesSettings().create('9999')
+        self.__set_communicator()
+        self.__set_video_capture(self.__process_recognition)
 
-        self.communicator_thread = Thread(target=self.communicator.start)
-        self.video_capture_thread = Thread(target=lambda: self.video_capture.start(self.__process_recognition))
-
-        self.communicator_thread.start()
-        self.video_capture_thread.start()
-
-        #self.create.box(0, 'Информация', f'IP-адрес станции: {ip_address.get()}')
-
-        #self.current_window = self.windows[0]
-        #self.current_window.create()
+        self.create.box(0, 'Информация', f'IP-адрес станции: {ip_address.get()}')
+        self.__change(0)
 
 if __name__ == "__main__":
     App()

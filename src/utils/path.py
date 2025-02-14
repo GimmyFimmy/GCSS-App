@@ -38,6 +38,15 @@ class Path:
             print(f'[ERROR]: unable to get path to <{file}>!')
 
     @staticmethod
+    def create_directory(directory: str):
+        assert(type(directory) is str)
+
+        try:
+            os.makedirs(directory)
+        except OSError:
+            print(f'[ERROR]: unable to create <{directory}> directory!')
+
+    @staticmethod
     def remove_file(file: str, directory=None):
         assert(type(file) is str)
 

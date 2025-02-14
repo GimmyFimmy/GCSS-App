@@ -34,4 +34,7 @@ UPDATE_DELAY = 1000
 WEEKDAYS = ['Понедельник', 'Вторник', 'Среда', 'Четверг','Пятница', 'Суббота', 'Воскресенье',]
 
 # 'create' properties
-BOXES_TYPES = [messagebox.showinfo, messagebox.askretrycancel, messagebox.askyesno, messagebox.showerror]
+BOXES_TYPES = [messagebox.showinfo, messagebox.showwarning, messagebox.askyesno, messagebox.showerror]
+
+# 'main' properties
+MAX_IMAGES = 100

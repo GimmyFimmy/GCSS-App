@@ -8,7 +8,7 @@ class DevicesManager:
         self.registry = Registry()
 
     def create(self):
-        self.window = Create.window('400x440')
+        self.window = Create.window(400, 440)
         self.canvas = Create.canvas(self.window, 440, 400)
 
         self.image_image_1 = Create.image(1, "image_1")
@@ -80,11 +80,8 @@ class DevicesManager:
                 30.0,
             )
 
-            button_1.configure(command=lambda button=port: self.callback(3, button))
+            button_1.configure(command=lambda button=port: self.callback(3, False, button))
 
             count += 1
 
         self.window.mainloop()
-
-    def destroy(self):
-        self.window.destroy()

@@ -46,14 +46,10 @@ class Communicator:
         # set 'running: bool' as True
         self._running = True
 
-        print('start listening!')
-
         # update 'listener: function'
         while self._running:
             # receive 'data: bytes' and 'address: tuple'
             data, address = self.socket.recvfrom(BUFFER_SIZE)
-
-            print('received data!')
 
             # check if 'data: bytes' received
             if data is not None:
@@ -76,3 +72,6 @@ class Communicator:
 
         # send 'command: str' to 'address: tuple'
         self.socket.sendto(command, address)
+
+    def is_running(self):
+        return self._running

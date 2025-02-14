@@ -5,548 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2d28fc2-f9f9-4b7c-b151-53fec33644cc" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/src/libs/communicator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/communicator/solutions/communicator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/communicator/solutions/registry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_0/button_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_0/button_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_0/button_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_0/image_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_0/image_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_1/button_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_1/button_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_1/image_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_1/image_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_2/button_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_2/button_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_2/button_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_2/image_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_2/image_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/devices_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/devices_settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/gestures_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/byte.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/calculate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ip_address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/save_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_3/button_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_3/button_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_3/image_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/assets/frame_3/image_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/gesture_name.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/communicator/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/communicator/communicator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/communicator/registry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1000.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/user_interface/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1072.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1083.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1189.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1198.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1206.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1214.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1224.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1244.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1255.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1308.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1340.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1362.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1376.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1381.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1412.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1416.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1424.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1446.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1469.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1488.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1501.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1521.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1534.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1552.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1590.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1609.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1627.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1633.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1643.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1663.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1712.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1729.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1784.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1799.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1802.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1811.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1812.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1814.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1823.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1843.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1851.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1876.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1878.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1883.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1890.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/190.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/1906.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/193.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/203.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/213.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/229.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/236.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/249.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/252.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/255.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/270.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/275.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/292.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/327.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/334.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/349.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/363.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/386.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/394.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/424.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/433.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/511.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/520.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/598.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/60.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/613.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/65.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/657.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/704.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/71.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/729.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/735.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/744.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/756.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/779.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/791.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/794.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/802.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/820.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/823.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/898.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/939.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/941.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/955.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/957.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/none/993.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/119.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/146.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/166.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/179.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/192.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/194.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/206.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/227.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/236.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/249.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/258.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/269.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/276.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/278.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/282.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/283.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/284.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/302.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/319.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/321.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/339.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/393.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/394.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/395.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/401.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/406.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/411.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/423.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/439.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/460.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/461.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/465.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/472.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/477.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/482.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/483.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/495.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/505.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/51.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/518.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/529.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/531.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/533.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/537.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/539.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/544.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/575.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/594.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/601.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/620.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/628.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/654.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/655.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/657.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/666.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/677.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/680.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/690.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/701.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/717.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/719.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/72.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/730.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/734.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/74.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/744.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/757.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/77.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/771.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/785.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/791.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/806.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/811.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/818.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/832.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/837.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/838.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/844.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/846.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/847.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/855.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/865.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/884.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/887.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/89.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/890.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/891.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/898.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/901.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/905.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/91.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/918.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/919.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/935.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/941.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/944.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/955.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/971.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/973.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/paper/977.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/152.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/168.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/182.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/186.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/193.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/206.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/211.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/216.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/218.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/223.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/244.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/254.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/285.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/286.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/290.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/302.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/305.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/309.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/318.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/320.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/328.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/348.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/351.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/356.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/360.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/363.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/376.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/392.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/398.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/399.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/407.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/409.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/416.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/426.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/427.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/428.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/431.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/435.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/449.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/45.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/507.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/513.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/523.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/524.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/529.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/536.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/537.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/541.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/545.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/546.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/548.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/549.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/560.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/565.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/567.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/592.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/593.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/595.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/614.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/617.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/621.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/625.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/635.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/648.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/672.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/675.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/687.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/709.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/722.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/728.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/733.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/760.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/764.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/769.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/771.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/772.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/776.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/778.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/784.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/796.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/818.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/82.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/834.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/851.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/854.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/861.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/868.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/875.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/88.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/891.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/894.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/896.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/901.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/904.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/905.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/915.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/922.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/929.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/931.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/938.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/942.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/945.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/rock/967.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/116.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/119.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/122.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/129.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/149.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/156.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/162.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/173.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/184.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/188.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/192.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/196.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/208.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/222.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/223.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/232.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/251.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/261.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/264.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/269.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/276.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/278.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/285.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/289.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/301.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/306.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/321.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/323.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/338.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/378.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/382.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/387.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/394.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/397.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/428.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/436.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/448.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/45.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/463.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/476.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/482.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/49.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/520.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/522.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/527.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/531.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/534.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/549.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/559.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/568.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/580.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/589.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/595.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/596.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/60.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/602.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/604.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/610.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/614.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/617.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/630.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/631.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/641.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/656.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/657.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/670.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/673.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/684.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/691.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/705.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/706.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/707.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/715.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/720.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/730.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/753.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/760.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/764.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/782.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/785.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/788.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/791.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/792.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/798.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/803.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/804.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/853.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/856.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/866.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/871.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/878.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/925.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/927.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/930.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/942.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/954.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/datasets/sample/scissors/968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/best_model_weights.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/best_model_weights.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/best_model_weights.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/best_model_weights.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0001.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0001.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0001.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0001.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0002.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0002.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0002.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0002.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0003.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0003.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0003.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0003.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0004.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0004.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0004.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0004.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0005.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0005.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0005.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0005.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0006.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0006.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0006.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0006.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0007.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0007.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0008.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0008.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0008.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0008.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0009.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0009.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0010.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0010.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/epoch_models/model-0010.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/epoch_models/model-0010.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/gesture_recognizer.task" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/gesture_recognizer.task" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/model/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/model/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/solutions/gesture_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/solutions/gesture_recognizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/solutions/hand_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/solutions/hand_detector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/solutions/model_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/gesture_recognizer/solutions/model_trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/utils/accuracy_calculator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/utils/draw_landmarks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/draw_landmarks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/utils/frame_timestamp_calculator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/gesture_recognizer/utils/save_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui_controller/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/communicator/solutions/communicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/communicator/solutions/communicator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/user_interface/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/user_interface/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/user_interface/windows/devices_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/devices_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/user_interface/windows/devices_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/devices_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/user_interface/windows/gestures_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/gestures_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/user_interface/windows/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/user_interface/windows/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/calculate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/create.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/path.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/path.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils_deprecated/cleanup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils_deprecated/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils_deprecated/video_capture.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/video_capture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/video_capture.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/video_capture.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -593,50 +69,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.App.executor": "Run",
-    "Python.DataGenerator.executor": "Run",
-    "Python.DirectoriesManager.executor": "Run",
-    "Python.GestureRecognizer.executor": "Run",
-    "Python.HandDetector.executor": "Run",
-    "Python.ModelTrainer.executor": "Run",
-    "Python.VideoCapture.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python._pydev_execfile.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.communicator.executor": "Run",
-    "Python.constants.executor": "Run",
-    "Python.create.executor": "Run",
-    "Python.devices_manager.executor": "Debug",
-    "Python.devices_settings.executor": "Run",
-    "Python.gesture_recognizer.executor": "Run",
-    "Python.gestures_manager.executor": "Run",
-    "Python.gestures_settings.executor": "Run",
-    "Python.gui.executor": "Run",
-    "Python.gui_0.executor": "Run",
-    "Python.hyi.executor": "Run",
-    "Python.logger.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.manage.executor": "Run",
-    "Python.menu.executor": "Run",
-    "Python.model_trainer.executor": "Run",
-    "Python.path.executor": "Run",
-    "Python.registry.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "kpers",
-    "last_opened_file_path": "C:/Users/kpers/PycharmProjects/project_gcss_2.0/src/libs/user_interface/windows",
-    "settings.editor.selected.configurable": "editor.reader.mode"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.App.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DataGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DirectoriesManager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.GestureRecognizer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HandDetector.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ModelTrainer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.VideoCapture.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python._pydev_execfile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.communicator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.constants.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create.executor&quot;: &quot;Run&quot;,
+    &quot;Python.devices_manager.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.devices_settings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gesture_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gesture_recognizer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gestures_manager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gestures_settings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gui_0.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hyi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logger.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_trainer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.path.executor&quot;: &quot;Run&quot;,
+    &quot;Python.registry.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;kpers&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kpers/PycharmProjects/project_gcss_2.0/src/libs/user_interface&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\libs\user_interface\windows" />
       <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\libs\user_interface" />
+      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\libs\user_interface\assets" />
+      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\libs\user_interface\windows" />
       <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\lib\user_interface\presets" />
       <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\lib\user_interface" />
-      <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\modules\ui_controller\presets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kpers\PycharmProjects\project_gcss_2.0\src\libs\gesture_recognizer\datasets\sample" />
@@ -786,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738905290661</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1739250532821</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739250532821</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
