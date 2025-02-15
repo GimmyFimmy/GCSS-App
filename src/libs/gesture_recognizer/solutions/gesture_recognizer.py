@@ -49,9 +49,13 @@ class GestureRecognizer:
 
         assert(callable(listener))
 
+        model_file = open(ASSET_PATH, "rb")
+        model_data = model_file.read()
+        model_file.close()
+
         # create gesture recognizer 'base options'
         self.base_options = python.BaseOptions(
-            model_asset_path=ASSET_PATH
+            model_asset_buffer=model_data
         )
 
         # create gesture recognizer 'options'
