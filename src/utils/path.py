@@ -53,8 +53,11 @@ class Path:
         file_path = Path.get_path_to(file, directory)
 
         try:
-            if Path.exists(file_path):
-                os.unlink(file_path)
+            if os.path.isdir(file_path):
+                Path.remove_directory(file_path)
+            else:
+                if Path.exists(file_path):
+                    os.unlink(file_path)
         except OSError:
             print(f'[ERROR]: unable to remove <{file}>!')
 
