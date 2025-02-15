@@ -1,5 +1,5 @@
 # import libraries
-import cv2, tkinter
+import cv2
 
 from src.constants import MAX_ACCURACY_PERCENTAGE
 
