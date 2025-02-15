@@ -1,50 +1,106 @@
-import customtkinter
-
-from customtkinter import *
-
 from src.libs.communicator.solutions.registry import Registry
-from src.constants import (
-    DATASETS_PATH
-)
+from src.utils.create import Create
 
 class DevicesSettings:
-    def __init__(self):
-        customtkinter.set_appearance_mode('dark')
-        customtkinter.set_default_color_theme('green')
+    def __init__(self, on_button_pressed, on_save_pressed):
+        self.callback = on_button_pressed
+        self.save = on_save_pressed
 
-        self.window = CTk()
-        self.window.resizable(False, False)
-        self.window.geometry(400, 440)
+        self.registry = Registry()
 
-        self.frame = CTkScrollableFrame(
-            self.window,
-            orientation='vertical',
-            width=400,
-            height=440,
-            label_text='Редактирование устройства',
-            label_font=('', 20)
+    def create(self, data):
+        self.window = Create.window(1000, 600)
+        self.canvas = Create.canvas(self.window, 600, 1000)
+
+        self.image_image_1 = Create.image(1, "image_1")
+        self.image_image_2 = Create.image(1, "image_2")
+        self.image_image_3 = Create.image(1, "image_5")
+        self.button_image_1 = Create.image(1, "button_1")
+        self.button_image_2 = Create.image(1, "button_6")
+        self.button_image_3 = Create.image(1, "button_3")
+
+        Create.frame(
+            self.canvas,
+            500.0,
+            300.0,
+            self.image_image_1
         )
-        self.frame.pack()
 
-    def create(self, port: str):
-        data = Registry.read_device(port)
-        gestures = os.listdir(DATASETS_PATH)
+        Create.button(
+            self.button_image_1,
+            35.0,
+            35.0,
+            70.0,
+            70.0,
+            lambda: self.callback(2)
+        )
 
-        def on_button_pressed(*args):
-            print(args)
+        Create.button(
+            self.button_image_3,
+            895.0,
+            35.0,
+            70.0,
+            70.0,
+            lambda: self.save(data, self.input_data)
+        )
 
-        if data is not None:
-            CTkLabel(self.frame, text=f'IP-Адрес: {data[0]}', fg_color='transparent').pack()
-            CTkLabel(self.frame, text=f'Порт: {data[1]}', fg_color='transparent').pack(pady=20)
+        self.count = 0
+        self.input_data = {}
 
-            for line in data[3:]:
-                key, value = line.split('=')
+        for line in data[3:]:
+            key, value = line.split('=')
 
-                CTkLabel(self.frame, text=f'{key}', fg_color='transparent').pack(pady=10)
+            self.count += 1
 
-                option_menu = CTkOptionMenu(self.frame, values=gestures)
-                option_menu.set(value)
-                option_menu.configure(command=on_button_pressed)
-                option_menu.pack()
+            x_distance = 500 if self.count > 3 else 0
+            y_distance = (165 * (self.count - 4)) if self.count > 3 else (165 * (self.count - 1))
+
+            Create.frame(
+                self.canvas,
+                250.0 + x_distance,
+                195.0 + y_distance,
+                self.image_image_2
+            )
+
+            Create.label(
+                self.canvas,
+                136.0 + x_distance,
+                173.0 + y_distance,
+                key,
+                36
+            )
+
+            Create.frame(
+                self.canvas,
+                375.0 + x_distance,
+                195.0 + y_distance,
+                self.button_image_2,
+            )
+
+            input = Create.input_box(
+                290 + x_distance,
+                165 + y_distance,
+                170,
+                60
+            )
+
+            input.insert(0, value)
+
+            self.input_data[key] = input
+
+            Create.frame(
+                self.canvas,
+                70.0 + x_distance,
+                195.0 + y_distance,
+                self.image_image_3
+            )
+
+        Create.label(
+            self.canvas,
+            340.0,
+            46.0,
+            f'Настройки {data[2]}',
+            40
+        )
 
         self.window.mainloop()
