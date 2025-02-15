@@ -18,6 +18,8 @@ class Create:
         window.geometry(f'{width}x{height}+{x}+{y}')
         window.resizable(False, False)
 
+        window.focus_force()
+
         return window
 
     @staticmethod
@@ -51,7 +53,7 @@ class Create:
 
     @staticmethod
     def image(index: int, image: str):
-        image_path = ASSETS_PATH + f'/frame_{index}/{image}.png'
+        image_path = ASSETS_PATH + f'/frame{index}/{image}.png'
 
         if Path.exists(image_path):
             return PhotoImage(
@@ -69,13 +71,14 @@ class Create:
         return frame
 
     @staticmethod
-    def button(image, x: float, y: float, w: float, h: float, callback=None):
+    def button(image, x: float, y: float, w: float, h: float, callback=None, text=None):
         button = Button(
             image=image,
             borderwidth=0,
             highlightthickness=0,
             relief="flat",
-            command=callback
+            command=callback,
+            text=text,
         )
 
         button.place(
@@ -92,22 +95,24 @@ class Create:
         dialogue_box = BOXES_TYPES[category]
 
         if dialogue_box is not None:
-            return dialogue_box(
-                title=title,
-                message=text
+            box = dialogue_box(
+                title,
+                text
             )
+
+            return box
 
     @staticmethod
     def input_box(x: float, y: float, width: float, height: float):
-        entry = Entry(
+        input = Entry(
             bd=0,
-            bg="#FFFFFF",
-            fg="#000000",
+            bg="#404040",
+            fg="#FFFFFF",
             highlightthickness=0,
-            font=('Inter bold', 18)
+            font=('Inter Bold', 30)
         )
 
-        entry.place(
+        input.place(
             x=x,
             y=y,
             width=width,
@@ -115,4 +120,4 @@ class Create:
 
         )
 
-        return entry
+        return input
