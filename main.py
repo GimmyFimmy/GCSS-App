@@ -5,6 +5,7 @@ from threading import Thread
 from src.libs.communicator import *
 from src.libs.user_interface import *
 from src.libs.gesture_recognizer import *
+from src.libs.user_interface.windows.devices_settings import DevicesSettings
 
 from src.utils import (
     calculate,
@@ -19,13 +20,14 @@ from src.constants import (
     Path,
     MAX_IMAGES,
     DATASETS_PATH,
-    DEFAULT_GESTURE
+    DEFAULT_GESTURE,
+    MIN_ACCURACY_PERCENTAGE, VERSION
 )
 
 class App:
-    def __reset_window(self):
+    def __reset_window(self, *args):
         self.current_window.window.destroy()
-        self.current_window.create()
+        self.current_window.create(*args)
 
     def __set_window(self, index=None, *args):
         if index is not None:
@@ -37,8 +39,9 @@ class App:
                  self.current_window = None
 
     def __reset_video_capture(self):
-        self.video_capture.stop()
-        cv2.destroyAllWindows()
+        if self.video_capture.is_running():
+            self.video_capture.stop()
+            cv2.destroyAllWindows()
 
     def __set_video_capture(self, callback, use_thread=True):
         if not self.video_capture.is_running():
@@ -109,6 +112,7 @@ class App:
 
     def __on_gesture_received(self, gesture: str):
         if gesture != DEFAULT_GESTURE:
+            print(gesture)
             for data in self.registry.get_devices():
                 command = None
 
@@ -134,10 +138,12 @@ class App:
             self.registry.write_device(address, data)
             self.communicator.send(address, 'ps')
 
+            self.__reset_window()
+
     def __change(self, index=None, process=True, *args):
         self.__set_window(None)
 
-        print(process)
+        print(index)
 
         if process:
             self.__set_video_capture(self.__process_recognition)
@@ -191,6 +197,40 @@ class App:
 
         self.__change(1, False)
 
+    def __on_save_device_pressed(self, data, input_data):
+        box = self.create.box(2, 'Предупреждение', 'Вы уверены, что хотите сохранить изменения?')
+
+        if box:
+            for key in input_data:
+                input = input_data[key].get()
+
+                self.registry.rewrite_device(data[1], key, input)
+
+            self.__reset_window(self.registry.read_device(data[1]))
+
+    def __on_retrain_pressed(self):
+        self.current_window.window.attributes('-disabled', True)
+
+        if self.gesture_recognizer:
+            self.gesture_recognizer.recognizer.close()
+
+        self.create.box(0, 'Информация', 'Обновление жестов. Это займёт некоторое время')
+
+        self.model_trainer.train()
+
+        accuracy = calculate.accuracy(self.model_trainer.get_accuracy()[1])
+
+        self.model_trainer.export()
+
+        if accuracy >= MIN_ACCURACY_PERCENTAGE:
+            self.create.box(0, 'Информация', 'Обновление жестов прошло успешно')
+        else:
+            self.create.box(1, 'Предупреждение', 'Возникли проблемы при обновлении жестов. Рекомендуется повторно выполнить данную операцию')
+
+        self.gesture_recognizer = GestureRecognizer(self.__on_gesture_received)
+
+        self.current_window.window.attributes('-disabled', False)
+
     def __on_remove_gesture_pressed(self, name: str):
         box = self.create.box(2, 'Предупреждение', 'Вы уверены, что хотите удалить жест?')
 
@@ -200,6 +240,14 @@ class App:
             Path.remove_directory(gesture_path)
 
             self.__reset_window()
+
+    def __on_display_info_pressed(self):
+        self.create.box(0, 'Информация', f'''
+        Версия: {VERSION}
+        
+        IP-адрес станции: {ip_address.get()}
+        
+        ''')
 
     def __init__(self):
         self.registry = Registry()
@@ -215,16 +263,14 @@ class App:
         self.current_window = None
 
         self.windows = [
-            Menu(self.__change),
-            GesturesManager(self.__change, self.__on_remove_gesture_pressed),
-            DevicesManager(self.__change),
-            GestureName(self.__change, self.__on_save_gesture_pressed)
+            Menu(self.__change, self.__on_display_info_pressed),
+            GesturesEditor(self.__change, self.__on_remove_gesture_pressed, self.__on_retrain_pressed),
+            DevicesEditor(self.__change),
+            GestureName(self.__change, self.__on_save_gesture_pressed),
+            DevicesSettings(self.__change, self.__on_save_device_pressed)
         ]
 
         self.__set_communicator()
-        self.__set_video_capture(self.__process_recognition)
-
-        self.create.box(0, 'Информация', f'IP-адрес станции: {ip_address.get()}')
         self.__change(0)
 
 if __name__ == "__main__":
