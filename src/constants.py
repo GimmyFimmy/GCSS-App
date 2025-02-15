@@ -31,10 +31,11 @@ BUFFER_SIZE = 1024
 
 # 'menu' properties
 UPDATE_DELAY = 1000
-WEEKDAYS = ['Понедельник', 'Вторник', 'Среда', 'Четверг','Пятница', 'Суббота', 'Воскресенье',]
+WEEKDAYS = ['Пн', 'Вт', 'Ср', 'Чт','Пт', 'Сб', 'Вс',]
 
 # 'create' properties
 BOXES_TYPES = [messagebox.showinfo, messagebox.showwarning, messagebox.askyesno, messagebox.showerror]
 
 # 'main' properties
+VERSION = '0.00.1'
 MAX_IMAGES = 100
