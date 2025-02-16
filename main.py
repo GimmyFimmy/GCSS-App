@@ -1,6 +1,15 @@
+import time
+from tkinter.tix import tixCommand
+
 import cv2
 
 from threading import Thread
+
+from Cython.Build.Tests.TestInline import test_kwds
+from scipy.signal import get_window
+from tensorflow_datasets.core.dataset_builders.huggingface_dataset_builder_test import \
+    test_all_parameters_are_passed_down_to_hf
+from win32comext.shell.demos.servers.folder_view import tasks
 
 from src.libs.communicator import *
 from src.libs.user_interface import *
@@ -43,16 +52,16 @@ class App:
             self.video_capture.stop()
             cv2.destroyAllWindows()
 
-    def __set_video_capture(self, callback, use_thread=True):
+    def __set_video_capture(self, callback, delay: int, use_thread=True):
         if not self.video_capture.is_running():
             if use_thread:
                 self.video_capture_thread = Thread(
-                    target=lambda: self.video_capture.start(callback)
+                    target=lambda: self.video_capture.start(callback, delay)
                 )
 
                 self.video_capture_thread.start()
             else:
-                self.video_capture.start(callback)
+                self.video_capture.start(callback, delay)
 
     def __reset_communication(self):
         self.communicator.stop()
@@ -79,6 +88,9 @@ class App:
         # clone 'image: ndarray'
         new_image = image.__copy__()
 
+        # convert 'image: ndarray' from 'BGR' to 'RGB'
+        new_image = cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB)
+
         # check for 'multi_hand_landmarks' in 'ndarray'
         if self.__get_hands(new_image):
             # calculate 'frame timestamp ms: int'
@@ -96,7 +108,13 @@ class App:
             self.create.box(0, 'Информация', 'Жест успешно сохранён')
             return
 
-        result = self.__get_hands(image)
+        # clone 'image: ndarray'
+        new_image = image.__copy__()
+
+        # convert 'image: ndarray' from 'BGR' to 'RGB'
+        new_image = cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB)
+
+        result = self.__get_hands(new_image)
 
         if result:
             self._count += 1
@@ -111,42 +129,46 @@ class App:
         cv2.imshow('tk', image)
 
     def __on_gesture_received(self, gesture: str):
-        if gesture != DEFAULT_GESTURE:
-            print(gesture)
-            for data in self.registry.get_devices():
-                command = None
+        print(str(gesture), len(gesture))
 
-                for line in data[3:]:
-                    key, value = line.split('=')
+        if gesture == DEFAULT_GESTURE:
+            return
 
-                    if value == gesture:
-                        command = key
-                        break
+        for data in self.data:
+            command = None
 
-                if command:
-                    address = (data[0], int(data[1]))
+            for line in data[3:]:
+                key, value = line.split('=')
 
-                    self.communicator.send(
-                        address=address,
-                        command=command
-                    )
+                if value == gesture:
+                    command = key
+                    break
+
+            if command:
+                address = (data[0], int(data[1]))
+
+                self.communicator.send(
+                    address=address,
+                    command=command
+                )
 
     def __on_server_received(self, data, address):
         if not self.registry.get_device(address):
             self.create.box(0, 'Уведомление', 'Новое умное устройство было обнаружено!')
 
             self.registry.write_device(address, data)
-            self.communicator.send(address, 'ps')
+
+            self.data = self.registry.get_devices()
 
             self.__reset_window()
+
+        self.communicator.send(address, 'ps')
 
     def __change(self, index=None, process=True, *args):
         self.__set_window(None)
 
-        print(index)
-
         if process:
-            self.__set_video_capture(self.__process_recognition)
+            self.__set_video_capture(self.__process_recognition, 1000)
         else:
             self.__reset_video_capture()
 
@@ -193,7 +215,7 @@ class App:
         self._name = name
 
         self.__reset_video_capture()
-        self.__set_video_capture(self.__process_saving, False)
+        self.__set_video_capture(self.__process_saving, 1, False)
 
         self.__change(1, False)
 
@@ -206,6 +228,7 @@ class App:
 
                 self.registry.rewrite_device(data[1], key, input)
 
+            self.data = self.registry.get_devices()
             self.__reset_window(self.registry.read_device(data[1]))
 
     def __on_retrain_pressed(self):
@@ -270,8 +293,11 @@ class App:
             DevicesSettings(self.__change, self.__on_save_device_pressed)
         ]
 
+        self.data = self.registry.get_devices()
+
         self.__set_communicator()
         self.__change(0)
+
 
 if __name__ == "__main__":
     App()
