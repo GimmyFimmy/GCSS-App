@@ -32,8 +32,5 @@ class HandDetector:
         )
 
     def process(self, image: numpy.ndarray):
-        # convert 'image: ndarray' from 'BGR' to 'RGB'
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-
         # process 'image: ndarray' and return result
         return self.Hands.process(image)
