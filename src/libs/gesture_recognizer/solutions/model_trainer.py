@@ -11,6 +11,7 @@
         get_accuracy -> tests model to get accuracy and loss
         export -> creates a new model
 """
+import os
 
 # import libraries
 from mediapipe_model_maker import gesture_recognizer
@@ -23,8 +24,6 @@ from src.constants import (
 
 class ModelTrainer:
     def __init__(self):
-        # get path to 'dataset: dir'
-
         # check if 'dataset: str' is not empty
         if Path.empty(DATASETS_PATH):
             print(f'[WARNING]: datasets directory is empty. Required 1 or more gestures')
