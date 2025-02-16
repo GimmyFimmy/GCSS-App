@@ -1,5 +1,5 @@
-192.168.1.103
+192.168.1.101
 9999
 lamp
-on=none
-off=none
+on=Test
+off=Win

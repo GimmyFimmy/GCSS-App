@@ -7,7 +7,7 @@ class VideoCapture:
         self.capture = None
         self.running = False
 
-    def start(self, image_changed):
+    def start(self, image_changed, delay: int):
         # check if 'function' type received
         assert(callable(image_changed))
 
@@ -30,7 +30,7 @@ class VideoCapture:
             image_changed(cv2.flip(frame, 1))
 
             # 'delay: int'
-            cv2.waitKey(1)
+            cv2.waitKey(delay)
 
         # set 'running: bool' to false
         self.running = False

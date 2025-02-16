@@ -37,7 +37,7 @@ class GestureRecognizer:
             # check if 'gestures' received
             if results.gestures:
                 # set new 'gesture: str'
-                gesture = results.gestures[0][0].category_name
+                gesture = results.gestures[0][0].category_name.replace('\r', '')
 
             # call 'listener: function'
             self.listener(gesture)

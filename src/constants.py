@@ -13,6 +13,10 @@ DATASETS_PATH = 'src/libs/gesture_recognizer/datasets'
 
 ASSET_PATH = Path.get_path_to('gesture_recognizer.task', MODEL_PATH)
 
+# links
+MODEL_LINK = 'https://storage.googleapis.com/mediapipe-models/gesture_recognizer/gesture_recognizer/float16/1/gesture_recognizer.task'
+SAMPLES_LINK = 'https://storage.googleapis.com/mediapipe-tasks/gesture_recognizer/'
+
 # 'hand_detector' properties
 MAX_HANDS = 2
 MIN_DETECTION_CONFIDENCE = 0.5
