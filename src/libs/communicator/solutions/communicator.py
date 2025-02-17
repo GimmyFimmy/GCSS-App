@@ -68,7 +68,7 @@ class Communicator:
 
     def send(self, address: tuple[str, int], command: str):
         # encode 'command: str'
-        command = bytes(command, 'utf-8')
+        command = byte.encode(command)
 
         # send 'command: str' to 'address: tuple'
         self.socket.sendto(command, address)
