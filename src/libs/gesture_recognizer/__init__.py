@@ -5,9 +5,6 @@
     hand detection and model training. It was specifically
     created for simple use and customization
 
-    NOTE: gesture_recognizer.py must be initialized before
-    any other solution, otherwise 'RunTime' error will occur
-
     TODO: optimize datasets
 """
 
