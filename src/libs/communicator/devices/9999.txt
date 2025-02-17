@@ -1,5 +1,0 @@
-192.168.1.101
-9999
-lamp
-on=Test
-off=Win
