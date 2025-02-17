@@ -1,15 +1,6 @@
-import time
-from tkinter.tix import tixCommand
-
 import cv2
 
 from threading import Thread
-
-from Cython.Build.Tests.TestInline import test_kwds
-from scipy.signal import get_window
-from tensorflow_datasets.core.dataset_builders.huggingface_dataset_builder_test import \
-    test_all_parameters_are_passed_down_to_hf
-from win32comext.shell.demos.servers.folder_view import tasks
 
 from src.libs.communicator import *
 from src.libs.user_interface import *
@@ -17,12 +8,12 @@ from src.libs.gesture_recognizer import *
 from src.libs.user_interface.windows.devices_settings import DevicesSettings
 
 from src.utils import (
+    create,
     calculate,
     save_image,
     ip_address,
     video_capture,
-    draw_landmarks,
-    create
+    draw_landmarks
 )
 
 from src.constants import (
@@ -52,7 +43,7 @@ class App:
             self.video_capture.stop()
             cv2.destroyAllWindows()
 
-    def __set_video_capture(self, callback, delay: int, use_thread=True):
+    def __set_video_capture(self, callback, delay=1, use_thread=True):
         if not self.video_capture.is_running():
             if use_thread:
                 self.video_capture_thread = Thread(
@@ -63,7 +54,7 @@ class App:
             else:
                 self.video_capture.start(callback, delay)
 
-    def __reset_communication(self):
+    def __reset_communicator(self):
         self.communicator.stop()
 
     def __set_communicator(self):
@@ -153,22 +144,25 @@ class App:
                 )
 
     def __on_server_received(self, data, address):
-        if not self.registry.get_device(address):
-            self.create.box(0, 'Уведомление', 'Новое умное устройство было обнаружено!')
+        self.communicator.send(address, 'ps')
 
+        if not self.registry.get_device(address):
             self.registry.write_device(address, data)
 
             self.data = self.registry.get_devices()
 
-            self.__reset_window()
+            self.create.box(0, 'Уведомление', 'Новое умное устройство было обнаружено!')
 
-        self.communicator.send(address, 'ps')
+            self.__set_communicator()
 
     def __change(self, index=None, process=True, *args):
         self.__set_window(None)
 
         if process:
-            self.__set_video_capture(self.__process_recognition, 1000)
+            self.__set_video_capture(
+                callback=self.__process_recognition,
+                delay=1000
+            )
         else:
             self.__reset_video_capture()
 
@@ -215,7 +209,11 @@ class App:
         self._name = name
 
         self.__reset_video_capture()
-        self.__set_video_capture(self.__process_saving, 1, False)
+
+        self.__set_video_capture(
+            callback=self.__process_saving,
+            use_thread=False
+        )
 
         self.__change(1, False)
 
@@ -224,9 +222,9 @@ class App:
 
         if box:
             for key in input_data:
-                input = input_data[key].get()
+                input_box = input_data[key]
 
-                self.registry.rewrite_device(data[1], key, input)
+                self.registry.rewrite_device(data[1], key, input_box.get())
 
             self.data = self.registry.get_devices()
             self.__reset_window(self.registry.read_device(data[1]))
