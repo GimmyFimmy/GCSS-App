@@ -1,5 +1,9 @@
 # import libraries
+import time
+
 import cv2
+
+from src.utils.calculate import delay
 
 class VideoCapture:
     def __init__(self):
@@ -7,7 +11,10 @@ class VideoCapture:
         self.capture = None
         self.running = False
 
-    def start(self, image_changed, delay: int):
+    def start(self, image_changed, delay_value=1):
+        # check if 'int' type received
+        assert(type(delay_value) == int)
+
         # check if 'function' type received
         assert(callable(image_changed))
 
@@ -30,7 +37,7 @@ class VideoCapture:
             image_changed(cv2.flip(frame, 1))
 
             # 'delay: int'
-            cv2.waitKey(delay)
+            time.sleep(delay(delay_value))
 
         # set 'running: bool' to false
         self.running = False
