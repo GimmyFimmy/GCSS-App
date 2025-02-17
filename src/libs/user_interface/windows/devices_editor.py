@@ -35,8 +35,16 @@ class DevicesEditor:
             lambda: self.callback(0)
         )
 
+        Create.label(
+            self.canvas,
+            300.0,
+            46.0,
+            'Управление устройствами',
+            40
+        )
+
         count = 0
-        devices = Registry.get_devices()
+        devices = Registry.get_devices() or []
 
         for data in devices:
             name = data[2]
@@ -76,13 +84,5 @@ class DevicesEditor:
                 195.0 + y_distance,
                 self.image_image_3
             )
-
-        Create.label(
-            self.canvas,
-            300.0,
-            46.0,
-            'Управление устройствами',
-            40
-        )
 
         self.window.mainloop()

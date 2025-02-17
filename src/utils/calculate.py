@@ -11,6 +11,9 @@ def accuracy(value: int):
     # return 'accuracy: int'
     return round(value * MAX_ACCURACY_PERCENTAGE)
 
+def delay(value: int):
+    return round(1000 / value)
+
 def screen_center(window, size_x: float, size_y: float):
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()

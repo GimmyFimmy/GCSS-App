@@ -99,7 +99,7 @@ class DevicesSettings:
             self.canvas,
             340.0,
             46.0,
-            f'Настройки {data[2]}',
+            f'{data[2]}',
             40
         )
 

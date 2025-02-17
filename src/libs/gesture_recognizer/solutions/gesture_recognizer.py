@@ -47,10 +47,14 @@ class GestureRecognizer:
         if not Path.exists(ASSET_PATH):
             return
 
+        # check if 'function' type received
         assert(callable(listener))
 
+        # open 'gesture_recognizer.task'
         model_file = open(ASSET_PATH, "rb")
+        # read 'gesture_recognizer.task'
         model_data = model_file.read()
+        # close 'gesture_recognizer.task'
         model_file.close()
 
         # create gesture recognizer 'base options'

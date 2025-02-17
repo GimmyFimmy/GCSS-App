@@ -1,4 +1,8 @@
-import urllib.request
+import os
+
+from io import BytesIO
+from urllib import request
+from zipfile import ZipFile
 
 from src.constants import (
     Path,
@@ -9,27 +13,25 @@ from src.constants import (
     MODEL_PATH,
 
     SAMPLES_LINK,
-    MODEL_LINK
+    MODEL_LINK,
 )
 
 def download_model():
-    urllib.request.urlretrieve(MODEL_LINK, MODEL_PATH)
+    request.urlretrieve(MODEL_LINK, ASSET_PATH)
 
 def download_samples():
-    IMAGE_FILENAMES = ['thumbs_down.jpg', 'victory.jpg', 'thumbs_up.jpg', 'pointing_up.jpg']
+    gesture_recognizer_path = 'src/libs/gesture_recognizer'
 
-    for name in IMAGE_FILENAMES:
-        directory = f'{DATASETS_PATH}/{name}'
-        url = f'{SAMPLES_LINK}{name}'
+    samples = request.urlopen(SAMPLES_LINK)
+    archive = ZipFile(BytesIO(samples.read()))
 
-        urllib.request.urlretrieve(url, directory)
+    archive.extractall(gesture_recognizer_path)
+
+    os.rename(os.path.join(gesture_recognizer_path, 'rps_data_sample'), DATASETS_PATH)
 
 if __name__ == '__main__':
-    Path.create_directory(DATASETS_PATH)
-    Path.create_directory(f'{DATASETS_PATH}/None')
-
     Path.create_directory(DEVICES_PATH)
     Path.create_directory(MODEL_PATH)
 
-    #download_model()
+    download_model()
     download_samples()
