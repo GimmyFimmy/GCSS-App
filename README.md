@@ -1,5 +1,8 @@
 # Gestures' Controllable Smart Station
   интеллектуальная станция, управляемая жестами рук
+
+> [!CAUTION]
+> This repository will be removed on may 1 due to code refactoring. Check the latest versions of this project [here](https://github.com/Kirosha-Team)
   
 ## №1 Введение: 
   Умная станция - это многофункциональное устройство, предназначенное 
